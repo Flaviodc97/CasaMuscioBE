@@ -3,6 +3,9 @@ using CasaMuscioBE.DAL.Context;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using CasaMuscioBE.API.Configuration;
+using CasaMuscioBE.DAL.IRepositories;
+using CasaMuscioBE.DAL.Entities;
+using CasaMuscioBE.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +22,7 @@ builder.Services.AddMvc().AddJsonOptions(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDBContext>(
-      options => options.UseSqlServer(
+      options => options.UseSqlite(
          builder.Configuration.GetConnectionString("DbConn")
       )
     );
@@ -32,6 +35,10 @@ var mapperConfig = new MapperConfiguration(cfg =>
 });
 IMapper mapper = mapperConfig.CreateMapper();
 services.AddSingleton(mapper);
+services.AddScoped<AbstractRepository<Roomate>, RoomateRepository>();
+services.AddScoped<IRoomateService, RoomateService>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

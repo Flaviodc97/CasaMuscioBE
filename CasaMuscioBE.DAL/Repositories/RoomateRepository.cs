@@ -1,4 +1,5 @@
 ﻿using CasaMuscioBE.DAL.Entities;
+using CasaMuscioBE.DAL.IRepositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,16 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CasaMuscioBE.DAL.Context
+namespace CasaMuscioBE.DAL.Repositories
 {
-    public class AppDBContext : DbContext
+    public class RoomateRepository : AbstractRepository<Roomate> 
     {
-
-        public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
+        public RoomateRepository(DbContext context) : base(context) 
         {
+            
         }
-        public DbSet<Roomate>? Roomate { get; set; }
-
-
     }
 }
