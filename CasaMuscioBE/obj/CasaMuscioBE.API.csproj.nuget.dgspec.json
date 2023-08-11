@@ -4,14 +4,92 @@
     "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE\\CasaMuscioBE.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj": {
+    "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.BLL\\CasaMuscioBENew.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj",
-        "projectName": "CasaMuscioBE.BLL",
-        "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.BLL\\CasaMuscioBENew.BLL.csproj",
+        "projectName": "CasaMuscioBENew.BLL",
+        "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.BLL\\CasaMuscioBENew.BLL.csproj",
         "packagesPath": "C:\\Users\\fdellacorte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\obj\\",
+        "outputPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fdellacorte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj": {
+                "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj",
+        "projectName": "CasaMuscioBENew.DAL",
+        "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj",
+        "packagesPath": "C:\\Users\\fdellacorte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,119 +123,29 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.DAL\\CasaMuscioBE.DAL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.DAL\\CasaMuscioBE.DAL.csproj",
-        "projectName": "CasaMuscioBE.DAL",
-        "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.DAL\\CasaMuscioBE.DAL.csproj",
-        "packagesPath": "C:\\Users\\fdellacorte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.DAL\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\fdellacorte\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj": {
-                "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "MailKit": {
-              "target": "Package",
-              "version": "[3.4.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -210,11 +198,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj": {
-                "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj"
+              "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.BLL\\CasaMuscioBENew.BLL.csproj": {
+                "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.BLL\\CasaMuscioBENew.BLL.csproj"
               },
-              "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.DAL\\CasaMuscioBE.DAL.csproj": {
-                "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.DAL\\CasaMuscioBE.DAL.csproj"
+              "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj": {
+                "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBENew.DAL\\CasaMuscioBENew.DAL.csproj"
               }
             }
           }
@@ -241,23 +229,31 @@
               "target": "Package",
               "version": "[5.2.9, )"
             },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
