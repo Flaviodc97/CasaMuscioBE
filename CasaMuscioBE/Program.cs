@@ -1,14 +1,16 @@
 using Microsoft.EntityFrameworkCore;
-using CasaMuscioBE.DAL.Context;
+using CasaMuscioBENew.DAL.Context;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using CasaMuscioBE.API.Configuration;
-using CasaMuscioBE.DAL.IRepositories;
-using CasaMuscioBE.DAL.Entities;
-using CasaMuscioBE.DAL.Repositories;
+using CasaMuscioBENew.DAL.IRepositories;
+using CasaMuscioBENew.DAL.Entities;
+using CasaMuscioBENew.BLL.IServices;
+using CasaMuscioBENew.BLL.Services;
+using CasaMuscioBENew.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -26,8 +28,24 @@ builder.Services.AddDbContext<AppDBContext>(
          builder.Configuration.GetConnectionString("DbConn")
       )
     );
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IRoomateService, RoomateService>();
+builder.Services.AddScoped<IRoomateRepository, RoomateRepository>();
 
+
+
+builder.Services.AddControllersWithViews()
+        .AddNewtonsoftJson(options =>
+        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+    );
+builder.Services.AddMvc().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.WriteIndented = true;
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+});
 var services = new ServiceCollection();
+
 builder.Services.AddAutoMapper(typeof(AutoMapperConfiguration));
 var mapperConfig = new MapperConfiguration(cfg =>
 {
@@ -35,17 +53,26 @@ var mapperConfig = new MapperConfiguration(cfg =>
 });
 IMapper mapper = mapperConfig.CreateMapper();
 services.AddSingleton(mapper);
-services.AddScoped<AbstractRepository<Roomate>, RoomateRepository>();
-services.AddScoped<IRoomateService, RoomateService>();
 
+
+builder.Services.AddCors(core =>
+{
+    core.AddPolicy("default", options =>
+    {
+        options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
+app.UseDeveloperExceptionPage();
+app.UseCors("default");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+   
 }
 
 app.UseHttpsRedirection();

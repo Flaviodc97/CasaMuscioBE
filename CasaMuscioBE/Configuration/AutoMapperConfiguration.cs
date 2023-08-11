@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using CasaMuscioBENew.BLL.Models;
+using CasaMuscioBENew.DAL.Entities;
 
 namespace CasaMuscioBE.API.Configuration
 {
@@ -6,7 +8,7 @@ namespace CasaMuscioBE.API.Configuration
     {
         public AutoMapperConfiguration()
         {
-            
+            CreateMap<Roomate, RoomateDTO>().ReverseMap();
 
         }
     }

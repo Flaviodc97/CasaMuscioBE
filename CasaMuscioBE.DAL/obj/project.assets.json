@@ -724,21 +724,6 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
-      },
-      "CasaMuscioBE.BLL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "bin/placeholder/CasaMuscioBE.BLL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CasaMuscioBE.BLL.dll": {}
-        }
       }
     }
   },
@@ -1757,18 +1742,12 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "CasaMuscioBE.BLL/1.0.0": {
-      "type": "project",
-      "path": "../CasaMuscioBE.BLL/CasaMuscioBE.BLL.csproj",
-      "msbuildProject": "../CasaMuscioBE.BLL/CasaMuscioBE.BLL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "CasaMuscioBE.BLL >= 1.0.0",
       "MailKit >= 3.4.2",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
@@ -1810,11 +1789,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj": {
-              "projectPath": "C:\\Users\\fdellacorte\\source\\repos\\CasaMuscioBE\\CasaMuscioBE.BLL\\CasaMuscioBE.BLL.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

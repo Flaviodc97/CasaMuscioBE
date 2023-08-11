@@ -1,4 +1,4 @@
-﻿using CasaMuscioBE.DAL.Entities;
+﻿using CasaMuscioBENew.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CasaMuscioBE.DAL.Context
+namespace CasaMuscioBENew.DAL.Context
 {
     public class AppDBContext : DbContext
     {

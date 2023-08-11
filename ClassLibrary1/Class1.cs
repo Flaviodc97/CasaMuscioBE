@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CasaMuscioBE.BLL.IServices
+namespace ClassLibrary1
 {
-    public interface IRoomateService
+    public class Class1
     {
-        Task<int> Create(RoomateDTO);
-
     }
 }

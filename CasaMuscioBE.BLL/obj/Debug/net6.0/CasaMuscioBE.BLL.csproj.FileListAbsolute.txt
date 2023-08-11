@@ -1,0 +1,5 @@
+C:\Users\fdellacorte\source\repos\CasaMuscioBE\CasaMuscioBE.BLL\obj\Debug\net6.0\CasaMuscioBE.BLL.csproj.AssemblyReference.cache
+C:\Users\fdellacorte\source\repos\CasaMuscioBE\CasaMuscioBE.BLL\obj\Debug\net6.0\CasaMuscioBE.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdellacorte\source\repos\CasaMuscioBE\CasaMuscioBE.BLL\obj\Debug\net6.0\CasaMuscioBE.BLL.AssemblyInfoInputs.cache
+C:\Users\fdellacorte\source\repos\CasaMuscioBE\CasaMuscioBE.BLL\obj\Debug\net6.0\CasaMuscioBE.BLL.AssemblyInfo.cs
+C:\Users\fdellacorte\source\repos\CasaMuscioBE\CasaMuscioBE.BLL\obj\Debug\net6.0\CasaMuscioBE.BLL.csproj.CoreCompileInputs.cache
